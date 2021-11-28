@@ -1,0 +1,128 @@
+.contact_note{
+	margin: 16px 0 32px 0;
+	line-height: 1.6em;
+	@include font-size(16);
+}
+
+
+#contact{
+	color: $black;
+	display: flex;
+  	flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom:80px;
+    form{
+    	width: 64%;
+    	@include mq(sp) {
+    		width: 88%;
+  		}
+    	margin: auto;
+    	max-width: 560px;
+    }
+	label{
+		@include font-size(14);
+		span{
+			color:$white;
+			padding:4px 8px;
+			@include r_8;
+		}
+	}
+	input{
+		border:none;
+		@include r_8;
+		height: 24px;
+		padding:16px 4%;
+		width: 92%;
+		&::placeholder{
+			color:$placeholder_gray;
+		}
+	}
+
+	& input[type='checkbox']{
+		padding:8px;
+		height: 16px;
+		border: 1px solid $main_color;
+	}
+	textarea{
+		border:none;
+		@include r_8; 
+		height: 176px;
+		overflow-y: scroll;
+		padding:8px 2%;
+		width: 96%;
+		&::placeholder{
+			color:$placeholder_gray;
+		}
+
+	}
+}
+
+
+.form_block{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.input_block{
+	width: 100%;
+	margin-top: 16px;
+}
+
+.submit_block{
+	display: flex;
+	justify-content: center;
+}
+
+.checkbox_block{
+	input{
+		width: 24px !important;
+	}
+}
+
+#form_btn{
+	width: 240px !important;
+	height:48px !important;
+	background-color:$main_color;
+	color:$white;
+	margin: auto;
+}
+
+.privacy_policy{
+	text-align: center;
+	@include font-size(14);
+	a{
+		color:$main_color;
+	}
+}
+
+.required{
+	background-color:$sub_color_3;
+	@include font-size(12);
+	margin-left:16px;
+}
+
+.optional{
+	background-color:$gray;
+	@include font-size(12);
+	margin-left:16px;
+}
+
+.wpcf7{
+	width: 100%;
+}
+
+.wpcf7-list-item{
+	width: 100%;
+	display: inline-block !important;
+	margin: 8px 0px !important;
+	label{
+		display: flex;
+	}
+}
+
+.wpcf7-list-item-label{
+	white-space: nowrap;
+	color:$black !important;
+}

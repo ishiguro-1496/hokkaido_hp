@@ -1,0 +1,824 @@
+/*==== サービス一覧 ====*/
+
+.services{
+	display: flex;
+	align-items:flex-start;
+	justify-content: space-between;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+}
+.services_block{
+	width: 28%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include mq(sp) {
+		width: 100%;
+		margin-bottom:88px;
+		&:last-child {
+       margin-bottom: 0;
+     }
+	}
+}
+.services_icon{
+	width:20vh;
+  height: 20vh;
+	margin-bottom: 56px;
+	@include mq(sp) {
+  	margin-bottom: 40px;
+	}
+	svg{
+  		width: 28vh ;
+			height: 20vh;
+  	}
+}
+
+.services_icon_hp{
+	 background:$sub_color_1;
+	 @include fluid;
+}
+
+.services_icon_sns{
+	 background:$sub_color_2;
+	 @include fluid_2;
+}
+
+.services_icon_media{
+	 background:$sub_color_3;
+	 @include fluid_3;
+}
+
+.services_text{
+	div{
+			position:relative;
+			padding:24px 0;
+			@include mq(sp) {
+  			padding:16px 0;
+			}
+
+		h1{
+			@include font-size(24);
+			position:absolute;
+			right: 0;
+			left: 0;
+			top: 0;
+			bottom:0;
+			margin:auto;
+			text-align: center;
+			z-index: 100;
+			line-height: 1em;
+		}
+		p{
+			position:absolute;
+			right: 0;
+			top: 0;
+			bottom:0;
+			margin:auto;
+			color:$bg_color;
+			font-weight: 880;
+			@include font-size(80);
+			z-index: 0;
+		}
+	}
+	h2{
+			@include font-size(16);
+			padding:16px 0;
+			text-align: center;
+			line-height: 1.6em;
+	}
+}
+
+.services_text_hp{
+	text-shadow: 1px 0 0 $sub_color_1,0 1px 0 $sub_color_1,-1px 0 0 $sub_color_1,0 -1px 0 $sub_color_1;
+}
+
+.services_text_sns{
+	text-shadow: 1px 0 0 $sub_color_2,0 1px 0 $sub_color_2,-1px 0 0 $sub_color_2,0 -1px 0 $sub_color_2;
+}
+
+.services_text_media{
+	text-shadow: 1px 0 0 $sub_color_3,0 1px 0 $sub_color_3,-1px 0 0 $sub_color_3,0 -1px 0 $sub_color_3;
+}
+
+
+
+/*==== 個別サービスページ ====*/
+
+/*==== サービストップ ====*/
+
+.service_top{
+	display: flex;
+	align-items: center;
+	margin: 32px auto;
+	padding-bottom:32px;
+	width: 80%;
+	justify-content: space-between;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+}
+
+.fluid{
+		width:24vh;
+  	height: 24vh;
+  	background:$sub_color_1;
+  	margin-right: 64px;
+  	@include mq(sp) {
+			margin-right: 0px;
+		}
+  	svg{
+  		width: 280px ;
+			height: auto;
+  		// position:absolute;
+  		@include mq(sp) {
+			width: 240px;
+			}
+  	}
+}
+
+.fluid_hp{
+  	background:$sub_color_1;
+  	@include fluid;
+}
+
+.fluid_sns{
+  	background:$sub_color_2;
+  	@include fluid_2;
+  	svg{
+  		width: 224px ;
+			height: auto;
+  		// position:absolute;
+  		@include mq(sp) {
+			width: 176px;
+			}
+		}
+}
+
+.fluid_media{
+  	background:$sub_color_3;
+  	@include fluid_3;
+}
+
+
+.service_name{
+	width:64vw;
+	text-align: center;
+	@include mq(sp) {
+		margin-top:32px;
+		width:88vw;
+	}
+
+	div{
+		position:relative;
+		padding: 16px 0;
+		height: 60px;
+		@include mq(sp) {
+			margin-top:32px;
+			text-align: center;
+		}
+	
+		h1{
+			@include font-size(32);
+			position:absolute;
+			right: 0;
+			left: 0;
+			top: 0;
+			margin: auto;
+			z-index: 10; 
+		}
+		h2{
+				@include font-size(18);
+				z-index: 50;
+				position:absolute;
+				right: 0;
+				left: 0;
+				bottom:0;
+				z-index: 8;
+				margin: auto;
+				line-height: 1.6em;
+		}
+		p{
+			color:$bg_color;
+			font-weight: 800;
+			@include font-size(168);
+			position:absolute;
+			right: -64px;
+			top: 0;
+			bottom:0;
+			margin: auto;
+			z-index: 1;
+			@include mq(sp) {
+				@include font-size(120);
+				right: 0px;
+			}
+		}
+	}
+}
+
+.service_name_hp{
+	div{
+		p{
+			text-shadow: 1px 0 0 $sub_color_1,0 1px 0 $sub_color_1,-1px 0 0 $sub_color_1,0 -1px 0 $sub_color_1;
+		}
+	}
+}
+
+.service_name_sns{
+	div{
+		p{
+			text-shadow: 1px 0 0 $sub_color_2,0 1px 0 $sub_color_2,-1px 0 0 $sub_color_2,0 -1px 0 $sub_color_2;
+		}
+	}
+}
+
+.service_name_media{
+	div{
+		p{
+			text-shadow: 1px 0 0 $sub_color_3,0 1px 0 $sub_color_3,-1px 0 0 $sub_color_3,0 -1px 0 $sub_color_3;
+		}
+	}
+}
+
+/*==== hpナビ ====*/
+
+.hp_nav{
+	display: flex;
+	margin: 64px 0;
+	justify-content: space-between;
+	div{
+		width: 30%;
+		a{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: auto;
+			}
+			p{
+				margin-top: 24px;
+				@include font-size(16);
+				font-weight: bold;
+				border-bottom:1px solid $line_gray;
+				padding-bottom :8px;
+				color:$black;
+				@include mq(sp) {
+					@include font-size(10);
+				}
+
+			}
+		}
+	}
+}
+
+#hp_nav_current{
+	color:$main_color;
+	border-bottom:1px solid $main_color;
+}
+
+
+/*==== 特長 ====*/
+
+.service_point{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+	div{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 32px 0;
+		@include mq(sp) {
+			width: 80%;
+			margin: 16px auto;
+		}
+		svg{
+			fill: none;
+			width: 64px;
+			height: 64px;
+			margin-bottom: 16px;
+		}
+		span{
+			font-size: 100px;
+			img{
+				width: 64px;
+				height: 64px;
+			}
+			display: inline-block;
+			margin-bottom: 16px;
+		}
+		h4{
+			@include font-size(20);
+			margin-bottom: 16px;
+		}
+		p{
+			@include font-size(16);
+			line-height: 1.6em;
+		}
+	}
+}
+
+.service_point_hp{
+	div{
+		svg{
+			stroke: $sub_color_1;
+		}
+	}
+}
+
+.service_point_sns{
+	div{
+		svg{
+			stroke: $sub_color_2;
+		}
+	}
+}
+
+.service_point_media{
+	
+}
+
+
+/*==== サービス制作実績 ====*/
+
+#service_works_hp{
+	section{
+		margin-bottom: 24px;
+	}
+}
+
+#service_more{
+	margin: 0px 0px 0px auto ;
+}
+
+/*==== ECサポート ====*/
+
+.ec_support{
+	background: $white;
+	@include r_16;
+	text-align: center;
+	padding:16px 0;
+	h3{
+		@include font-size(24);
+		padding:16px 0;
+		line-height: 1.6em;
+		width: 88%;
+		margin: auto;
+	}
+	p{
+		@include font-size(16);
+		line-height: 1.6em;
+		padding:16px 0;
+		width: 88%;
+		margin: auto;
+	}
+	img{
+		padding:16px 0;
+		min-width:80px;
+		width: 280px;
+		height: auto;
+		@include mq(sp) {
+			width: 240px;
+		}
+	}
+}
+
+
+
+
+/*==== フロー ====*/
+
+.flow{
+	background-color:$white;
+	padding:32px 4%;
+	width: 92%;
+	@include r_16;
+	@include mq(sp) {
+		padding:32px 6%;
+		width: 88%;
+	}
+}
+
+.flow_step {
+	display: flex;
+	align-items:center;
+	justify-content: flex-start;
+	div{
+		h4{
+			@include font-size(20);
+			margin-bottom: 8px;
+		}
+		p{
+			@include font-size(14);
+			line-height: 1.6em;
+		}
+	}
+}
+
+.flow_num{
+	height:48px;
+	width:48px;
+	border-radius:50%;
+	line-height:48px;
+	text-align:center;
+	@include font-size(20);
+	font-weight: bold;
+	margin-right :24px;
+	@include mq(sp) {
+		margin:0 16px 0 8px;
+	}
+	span{
+		color:$white;
+	}
+}
+
+.flow_num_hp{
+	background:$sub_color_1;
+}
+
+.flow_num_sns{
+	background:$sub_color_2;
+}
+
+.flow_detail{
+	width: 88%;
+	@include mq(sp) {
+		width: 72%;
+	}
+}
+
+.flow_vline {
+  margin: 8px 0px 8px 24px;
+  width: 2px;
+  height: 64px;
+  @include mq(sp) {
+		margin-left: 32px;
+	}
+}
+
+.flow_vline_hp{
+	background:$sub_color_1;
+
+}
+
+.flow_vline_sns{
+	background:$sub_color_2;
+
+}
+
+/*==== 予約管理 ====*/
+
+.reservation_system{
+	@include r_16;
+	background:$white;
+	display: flex;
+	padding: 24px 4%;
+	align-items:center;
+	justify-content: space-between;
+	// position:relative;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+	div{
+		width: 64%;
+		margin-right:24px;
+		@include mq(sp) {
+			margin:0 auto 16px auto;
+			width: 88%;
+		}
+		h3{
+			text-align: center;
+			color:$main_color;
+			@include font-size(24);
+			line-height: 1.6em;
+			padding:16px 0;
+			margin-bottom: 24px;
+			border-bottom: 1px solid $line_gray;
+		}
+		p{
+			@include font-size(16);
+			line-height: 2.4em;
+		}
+	}
+	svg{
+		width: 304px;
+		height: auto;
+		// position:absolute;
+		// right: 16px;
+		// top: 0;
+		// bottom:0;
+		// margin: auto;
+		@include mq(sp) {
+			width: 240px;
+		}
+	}
+
+}
+
+.br-sp {
+	display: none; 
+	@include mq(sp) {
+			display: block;
+	}
+}
+
+
+/*==== 費用（予約管理） ====*/
+
+.price{
+	background: $white;
+	@include r_16;
+	display:flex;
+	padding: 40px 16%;
+	width: 68%;
+	justify-content: space-between;
+	@include mq(sp) {
+			flex-direction: column;
+			padding: 40px 8%;
+			width: 84%;
+		}
+	div{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		h3{
+			@include font-size(20);
+			text-align: center;
+			padding-bottom:24px;
+		}
+		p{
+			@include font-size(16);
+			span{
+				display:inline-block;
+				@include font-size(48);
+				color:$main_color;
+				font-weight:bold;
+			}
+		}
+		svg{
+			width: 64px;
+			height: auto;
+			padding:24px 0;
+			fill:$main_color;
+		}
+	}
+}
+
+.price_sns {
+	padding: 40px 2%;
+	width: auto;
+	div{
+		width: 32%;
+		justify-content: space-between;
+		@include mq(sp) {
+			flex-direction: column;
+			padding: 16px 4%;
+			width: 92%;
+		}
+		h3{
+			line-height: 1.6em;
+		}
+	}
+}
+
+.price_media{
+	align-items:center;
+	div{
+		h3{
+			margin-bottom: 24px;
+		}
+	}
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-top: 24px solid $main_color;
+  margin:24px 0;
+  padding-bottom:24px;
+}
+
+.price_vline{
+	margin: 8px;
+  width: 1px;
+  background:$line_gray;
+  @include mq(sp) {
+		width: 92%;
+		height: 1px;
+		margin:40px 4%;
+	}
+}
+
+.price_vline_reservation{
+	height: 168px;
+	@include mq(sp) {
+		height: 1px;
+	}
+}
+
+.price_vline_sns{
+	height: 160px;
+	@include mq(sp) {
+		height: 1px;
+	}
+}
+
+.price_vline_media{
+	height: 120px;
+	@include mq(sp) {
+		height: 1px;
+	}
+}
+
+/*==== 利用者の声 ====*/
+
+.voices{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.voice_block{
+	display: flex;
+	width: 48%;
+	justify-content: space-between;
+	margin: 24px 0;
+	@include mq(sp) {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+.voice_profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items:center;
+	width:32%;
+	@include mq(sp) {
+		flex-direction: row;
+		width: 100%;
+	}
+	img{
+		width: 112px;
+		height: 112px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	div{
+		span{
+			display: inline-block;
+			margin: 16px 0;
+			@include font-size(14);
+		}
+		p{
+			@include font-size(14);
+		}
+		@include mq(sp) {
+			width: 100%;
+			flex-direction: row;
+		}
+	}
+}
+
+.voicelink_hp{
+	color:$sub_color_1;
+}
+
+.voicelink_sns{
+	color:$sub_color_2;
+}
+
+.voicelink_media{
+	color:$sub_color_3;
+}
+
+
+
+.balloon{
+	background: $white;
+	@include r_16;
+	padding: 16px;
+	width:56%;
+	margin-left: 8%;
+	position:relative;
+	@include mq(sp) {
+		width: 92%;
+		margin-top:32px;
+		margin-left: 0;
+		padding: 16px 4%;
+	}
+	h5{
+		@include font-size(16);
+		padding-bottom: 8px;
+		line-height: 1.6em;
+	}
+	p{
+		@include font-size(14);
+		line-height: 1.6em;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -32px;
+		margin-top: -16px;
+		border: 16px solid transparent;
+		border-right: 16px solid $white;
+		@include mq(sp) {
+			content: "";
+			position: absolute;
+			top: -16px;
+			left: 24%;
+			margin-left: -16px;
+			border: 16px solid transparent;
+			border-bottom: 16px solid $white;
+		}
+	}
+}
+
+.media_info{
+	width: 100%;
+}
+
+.media_title{
+	text-align: center;
+	margin-bottom: 16px;
+	h3{
+		@include font-size(40);
+		padding-bottom: 16px;
+		line-height: 1.2em;
+		@include mq(sp) {
+			@include font-size(32);
+		}
+	}
+	p{
+		@include font-size(16);
+		line-height: 1.6em;
+	}
+}
+
+.media_detail{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+}
+
+.media_img{
+	margin-right:4%;
+	@include mq(sp) {
+		margin-right:0%;
+	}
+	a{
+		img{
+			@include mq(sp) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.media_point{
+
+	div{
+		display: flex;
+		align-items:center;
+		font-weight: bold;
+		padding:24px 0;
+		svg{
+			fill: none;
+			stroke:$sub_color_3;
+			width: 40px;
+			height: 40px;
+			margin-right: 16px;
+		}
+		p{
+			@include font-size(20);
+			line-height: 1em;
+			span{
+				@include font-size(32);
+				margin: 0 8px;
+				display: inline-block;
+				line-height: 1em;
+			}
+		}
+	}
+
+}

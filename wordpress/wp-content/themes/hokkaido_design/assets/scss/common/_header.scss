@@ -1,0 +1,234 @@
+header{
+	width: 100%;
+	background-color: $bg_color;
+	display: flex;
+	justify-content: space-between;
+	padding:24px 0;
+	align-items:center;
+}
+
+.header_logo{
+	margin-left:4%;
+	@include mq(sp) {
+    	margin: 0 4%;
+  	}
+	svg{
+		width:104px;
+		height: auto;
+		fill-rule: evenodd;
+		fill:$black;
+	}
+}
+
+
+.header_menu{
+	margin-right:4%;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	list-style: none;
+		li{
+			margin-left:32px;
+			color: $black;
+			text-align: center;
+			@include font-size(14);
+			@include mq(sp) {
+				display: none;
+				margin-left:16px;
+		  	}	
+			a{
+				text-decoration: none;
+				color: $black;
+			}
+		}
+}
+
+.menu_ja{
+	@include font-size(12);
+	padding-top:8px;
+
+}
+.menu_en{
+	font-weight: bold;
+	@include mq(sp) {
+		display: none;
+	}
+}
+
+#contact_btn{
+	background-color:$main_color;
+	@include r_8;
+	padding:8px 24px;
+	@include mq(sp) {
+		display: block;
+		padding:8px;
+  	}	
+	a{
+		display: flex;
+		align-items:center;
+		@include mq(sp) {
+			flex-direction: column;
+  		}
+  		svg{
+  			width: 24px;
+  			height: 24px;
+  			fill:$white;
+  		}	
+		div{
+			color:$white;
+			margin-left:16px;
+			@include mq(sp) {
+			margin-left:0;
+  		}	
+
+		}
+	}
+}
+
+#hamburger{
+	display: none;
+	position:relative;
+	width: 26px;
+	@include mq(sp) {
+		display: block;
+  	}	
+}
+
+/*==== メニューボタン ====*/
+
+.openbtn1{
+  position:absolute;
+  top:0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10002;
+  cursor: pointer;
+  width: 100%;
+  height:24px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
+  position:relative;
+  span{
+  	  display: inline-block;
+  	  transition: all .4s;
+  	  height: 4px;
+  	  border-radius: 2px;
+  	  background-color: $sub_black;
+  	  width:100%;
+  }
+  &.active{
+  	span{
+  		background-color:$white;
+  	}
+  }
+}
+  
+.openbtn1.active span:nth-of-type(1) {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    transform: translateY(-8px) rotate(45deg);
+}
+
+
+
+/*==== ナビ ====*/
+
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+#g-nav {
+	&.panelactive{
+		position:fixed;
+		z-index: 10001;
+		top: 0;
+		width:100%;
+		height: 100vh;
+		display: block;
+		ul{
+			opacity:1;
+			li{
+				animation-name:gnaviAnime;
+				animation-duration:1s;
+				animation-delay:.16s;
+				animation-fill-mode:forwards;
+				opacity:0;
+			}
+		}
+	}
+
+	ul {
+	  	opacity: 0;
+		position: fixed;
+		z-index: 10000;
+		top:40%;
+		left:72%;
+		transform: translate(-50%,-50%);
+		li{
+		  	text-align: left; 
+		  	list-style: none;
+		  	display: block;
+		  	height: auto;
+		  	margin:16px 0;
+		  	a{
+		  		color: $white;
+				text-decoration: none;
+				padding:8px;
+				display: block;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				@include font-size(18);
+			}
+	  		div{
+	  			display: flex;
+	  			flex-direction: column;
+	    		align-items: flex-start;
+	  			p{
+	  				flex-wrap: nowrap;
+	  				margin: 8px 0 0 16px ;
+	  				a{
+	  					color:$white;
+	  					white-space: nowrap;
+	  					@include font-size(14);
+	  				}
+	  			}
+	  		}
+		}
+	}
+
+}
+
+/*==== 丸背景 ====*/
+
+.circle-bg{
+    position: fixed;
+  	z-index:9999;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba($main_color, .96);
+  	transform: scale(0);
+  	right:-24px;
+    top:40px;
+    transition: all .6s;
+    &.circleactive{
+    	transform: scale(50);
+    }
+}
+

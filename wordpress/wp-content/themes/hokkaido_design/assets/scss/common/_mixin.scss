@@ -1,0 +1,285 @@
+//
+// mixin
+// --------------------------------------------------
+
+// breakpoint
+
+
+
+$breakpoints : (
+  "lg":"screen and (max-width:1024px)",
+  "md":"screen and (max-width:768px)",
+  "sm":"screen and (max-width:480px)"
+);
+
+$screen-sm: 769px;
+
+@mixin mq($device) {
+  // mobile
+  @if $device == "sp" {
+    @media screen and (max-width: ($screen-sm - 1)) {
+    @content;
+    }
+  }
+  // pc
+  @else if $device == "pc" {
+    @media screen and (min-width: $screen-sm) {
+    @content;
+    }
+  }
+}
+
+// @mixin mq($breakpoint: md) {
+//   @media #{map-get($breakpoints, $breakpoint)} {
+//     @content;
+//   }
+// }
+
+
+
+// font-size
+
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+html {
+  font-size: 62.5%;
+  // min-width: 960px;
+  @include mq(sp) {
+    min-width: 318px;
+  }
+  @include mq(pc) {
+    min-width: 960px;
+  }
+}
+
+html.is-fixed,
+html.is-fixed body {
+  @media all and (max-width: 768px) {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+body{
+   line-height: 1.6em;
+}
+
+a{
+  text-decoration: none;
+}
+
+@mixin r_8 {
+  border-top-left-radius: 8px;
+  border-top-right-radius:8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius:8px;
+}
+
+@mixin r_16 {
+  border-top-left-radius: 16px;
+  border-top-right-radius:16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius:16px;
+}
+
+@mixin r_80 {
+  border-top-left-radius: 80px;
+  border-top-right-radius:80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius:80px;
+}
+
+
+@mixin white_bg_right{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius:16px;
+  background-color:$white;
+}
+
+@mixin circle_button{
+  @include font-size(16);
+  color:$main_color;
+  font-weight: bold;
+  background-color:$white;
+  padding:8px 24px;
+  border-radius: 80px;
+  border:2px solid $main_color;
+}
+
+
+@mixin more_button{
+  font-weight: bold;
+  border:2px solid $main_color;
+  background-color:$white;
+  @include font-size(14);
+  @include r_80;
+  position:relative;
+  a{
+    display: flex;
+    align-items:center;
+    padding:8px 40px;
+    p{
+      color: $main_color;
+    }
+    svg{
+      fill: $main_color;
+      position:absolute;
+      right: 2px;
+    }
+  }
+}
+
+
+
+@mixin shadow{
+  box-shadow: 4px 8px 20px 0px rgb(143,148,157);
+}
+
+
+
+// animation
+
+
+@mixin fluid {
+  animation: fluidrotate 30s ease 0s infinite;
+}
+
+@keyframes fluidrotate {  
+    
+  0%, 100% {
+      border-radius: 61% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+      border-radius: 40% 58% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+      border-radius: 54% 46% 40% 62%/49% 70% 30% 51%;
+  }
+  42% {
+      border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
+  }
+  56% {
+      border-radius: 61% 39% 67% 33%/68% 50% 50% 30%;
+  }
+  70% {
+      border-radius: 50% 50% 34% 66%/56% 66% 32% 44%;
+  }
+  84% {
+      border-radius: 46% 54% 50% 50%/35% 61% 35% 65%;
+  } 
+
+    
+}
+
+@mixin fluid_2 {
+  animation: fluidrotate_2 30s ease 0s infinite;
+}
+
+@keyframes fluidrotate_2 { 
+  0%, 100% {
+      border-radius: 61% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+      border-radius: 40% 58% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+      border-radius: 54% 46% 40% 62%/49% 70% 30% 51%;
+  }
+  42% {
+      border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
+  }
+  56% {
+      border-radius: 61% 39% 67% 33%/68% 50% 50% 30%;
+  }
+  70% {
+      border-radius: 50% 50% 34% 66%/56% 66% 32% 44%;
+  }
+  84% {
+      border-radius: 46% 54% 50% 50%/35% 61% 35% 65%;
+  } 
+
+
+}
+
+@mixin fluid_3 {
+  animation: fluidrotate_3 30s ease 0s infinite;
+}
+
+@keyframes fluidrotate_3 {  
+  0%, 100% {
+      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+      border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+      border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+      border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+      border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+      border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+      border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+
+}
+
+
+.fadeUp{
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+ 
+.fadeUpTrigger{
+    opacity: 0;
+}
+
+
+// color
+
+
+$main_color:#11A598;
+$sub_color_1:#66B8CF;
+$sub_color_2:#7274DB;
+$sub_color_3:#FF5A5F;
+
+$bg_color:#F5F5F5;
+
+
+$black: #333333;
+$sub_black:#454545;
+
+
+$gray:#A9A9A9;
+$line_gray:#DEDEDE;
+$placeholder_gray:#CCCCCC;
+$category_gray:#9197A3;
+
+$white: #FFFFFF;
+
+
+

@@ -1,0 +1,95 @@
+.footer{
+	width: 100%;
+	height: auto;
+	background-color:$sub_black;
+	padding:24px 0;
+	ul{
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+
+		li{
+			color: $white;
+			a{
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+
+	p{
+		text-align: center;
+		color: $white;
+		@include font-size(10);
+	}
+}
+
+.footer_logo{
+	width: 72%;
+	max-width:1024px;
+	margin: 0 auto;
+	@include mq(sp) {
+    	margin: 0 8%;
+  	}
+	svg{
+		width:88px;
+		height: auto;
+		margin: 0 0 24px 0;
+		fill-rule: evenodd;
+		fill:$white;
+	}
+}
+
+
+.footer_menu{
+	width: 72%;
+	max-width:1024px;
+	margin: 16px auto 36px auto;
+	font-weight: bold;
+	@include font-size(16);
+	@include mq(sp) {
+    	flex-direction: column;
+    	align-items: flex-start;
+    	margin: 0 8%;
+  	}
+  	li{
+  		margin:16px 0;
+  		a{
+  			margin:8px 0;
+  		}
+  		ul{
+  			display: flex;
+  			flex-direction: column;
+    		align-items: flex-start;
+  			li{
+  				flex-wrap: nowrap;
+  				margin: 16px 0 0 0 ;
+  				@include font-size(14);
+  				@include mq(sp) {
+  					margin: 16px 0 0 16px ;
+			  	}
+  				a{
+  					color:$placeholder_gray;
+  					white-space: nowrap;
+  				}
+  			}
+  		}
+  	}
+}
+
+.footer_links{
+	width: 48%;
+	max-width:720px;
+	margin: 24px auto;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	@include font-size(10);
+	@include mq(sp) {
+    	width:84%;  	}
+	li{
+		padding:8px 0;
+		color: $white;
+	}
+
+}
