@@ -54,12 +54,12 @@
 						endif;
 						wp_reset_postdata();
 					?>
-					<div class="more_button work_more">
-						<a href="<?php echo home_url('/work_cat/hp'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
+				</div>
+				<div class="more_button work_more">
+					<a href="<?php echo home_url('/work_cat/hp'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 				
 
@@ -108,12 +108,12 @@
 					endif;
 					wp_reset_postdata();
 					?>
-					<div class="more_button work_more">
-						<a href="<?php echo home_url('/work_cat/sns'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
+				</div>
+				<div class="more_button work_more">
+					<a href="<?php echo home_url('/work_cat/sns'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 
 
@@ -166,23 +166,18 @@
 				        </a>
 			        </section>
 
-
-
 					<?php 
 						endwhile;
 						endif;
 						wp_reset_postdata();
 					?>
-					<div class="more_button work_more">
-						<a href="<?php echo home_url('/work_cat/media'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
-				
 				</div>
-
-
+				<div class="more_button work_more">
+					<a href="<?php echo home_url('/work_cat/media'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
+				</div>
 
 			</div>
 			<!-- works_end -->

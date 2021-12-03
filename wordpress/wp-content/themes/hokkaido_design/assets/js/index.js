@@ -26,8 +26,5 @@ jQuery(document).ready(function($){
       $("#g-nav").removeClass('panelactive');
       $(".circle-bg").removeClass('circleactive');
   });
-
-
   
 });
-

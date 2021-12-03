@@ -308,13 +308,10 @@
 			margin-bottom: 16px;
 		}
 		span{
-			font-size: 100px;
-			img{
-				width: 64px;
-				height: 64px;
-			}
+			font-size: 72px;
 			display: inline-block;
-			margin-bottom: 16px;
+			height: 40px;
+			padding :32px 0;
 		}
 		h4{
 			@include font-size(20);
@@ -343,9 +340,9 @@
 	}
 }
 
-.service_point_media{
+// .service_point_media{
 	
-}
+// }
 
 
 /*==== サービス制作実績 ====*/
@@ -808,6 +805,11 @@
 			width: 40px;
 			height: 40px;
 			margin-right: 16px;
+		}
+		span{
+			font-size: 40px;
+			display: inline-block;
+			padding-right: 16px;
 		}
 		p{
 			@include font-size(20);

@@ -11,13 +11,28 @@
 	.top_message{	
 		position:absolute;
 		bottom:20%;
-		background-color:$bg_color;
-		border-top-right-radius: 16px;
-		border-bottom-right-radius: 16px;
-		padding: 16px 8%;
+		left: 4%;
+		background-color:rgba($white,0.5);
+		@include r_16;
+		padding: 16px 4%;
+  		backdrop-filter: blur(4px);
+		@include mq(sp) {
+			left: 8%;
+		}
+		// div{
+		// 	width: 100px;
+		// 	height: 100px;
+		// 	z-index: 1000;
+		// 	background-image: url("../img/hokkaido.png");
+		// 	background-repeat: no-repeat;
+		// 	background-color:rgba($white,0.5);
+		// 	backdrop-filter: blur(4px);
+		// }
 		h1{
 			line-height: 1.6em;
-			font-size: 3.2vw;
+			font-size: 2.8vw;
+			// opacity: 1;
+			// text-shadow: 0px 4px 8px $white; 
 			@include mq(sp) {
 				font-size: 5.6vw;
 			}
@@ -108,8 +123,8 @@
 .to_contact{
 	width: 56%;
 	background-color:$white;
-	margin:32px auto;
-	padding:32px 8%;
+	margin:16px auto;
+	padding:16px 8%;
 	position:relative;
 	min-width: 520px;
 	@include r_16;

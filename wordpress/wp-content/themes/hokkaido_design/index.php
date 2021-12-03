@@ -5,12 +5,13 @@
 	<div id="wrapper">
 
 		<div class="top_bg">
-			<img src="<?php echo get_template_directory_uri()?>/assets/img/top_bg.jpg">
+			<img src="<?php echo get_template_directory_uri()?>/assets/img/top_bg3.jpeg">
 			<div class="top_message">
+				<!-- <div></div> -->
 				<h1>北海道の起業家の<br>心強い味方に</h1>
 			</div>
 		</div>
-
+		
 		<!-- main -->
 		<div id="main">
 
@@ -186,6 +187,12 @@
 				   		</a>
 		    		</article>
 					<?php endwhile; endif; ?>
+				</div>
+				<div class="more_button work_more" id="service_more">
+					<a href="<?php echo home_url('/blog/'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 			</section>
 

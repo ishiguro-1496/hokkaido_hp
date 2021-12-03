@@ -55,34 +55,40 @@
 
 				<div class="service_point service_point_hp">
 					<div>
-						<?php include("assets/img/responsive.svg"); ?>
-						<h4>レスポンシブ対応</h4>
-						<p>もちろんスマホ、タブレットからでも閲覧できるようにレスポンシブ対応いたします！</p>
-					</div>
-					<div>
-						<?php include("assets/img/design.svg"); ?>
+						<!-- <?php include("assets/img/design.svg"); ?> -->
+						<span>🎨</span>
 						<h4>オリジナルデザイン</h4>
 						<p>お客様のご希望に寄り添って、オリジナルデザインで提案させていただきます！</p>
 					</div>
 					<div>
-						<?php include("assets/img/update.svg"); ?>
-						<h4>自社更新可能</h4>
-						<p>いつでも好きなタイミングでHPを更新いただくことも可能です。</p>
+						<!-- <?php include("assets/img/responsive.svg"); ?> -->
+						<span>📱</span>
+						<h4>レスポンシブ対応</h4>
+						<p>もちろんスマホ、タブレットからでも閲覧できるようにレスポンシブ対応いたします！</p>
 					</div>
 					<div>
-						<?php include("assets/img/support.svg"); ?>
-						<h4>公開後のサポート</h4>
-						<p>公開後も気になることがあれば、お気軽にお問い合わせください！細かい要望もサポートします！</p>
+						<!-- <?php include("assets/img/ec_support.svg"); ?> -->
+						<span>🛒</span>
+						<h4>ECサイト構築サポート</h4>
+						<p>Shopifyや、BASE、STORESといったECプロットフォームでのECサイト制作のサポートも承ります！</p>
 					</div>
 					<div>
-						<?php include("assets/img/seo.svg"); ?>
+						<!-- <?php include("assets/img/analytics.svg"); ?> -->
+						<span>📊</span>
+						<h4>アクセス分析</h4>
+						<p>Google Analyticsを利用したアクセス分析によって、集客・認知効果を可視化することができます！</p>
+					</div>
+					<div>
+						<!-- <?php include("assets/img/seo.svg"); ?> -->
+						<span>👩‍💻</span>
 						<h4>SEO対策</h4>
 						<p>より多くの方に認知いただけるよう、SEO対策もしっかりサポートします！</p>
 					</div>
 					<div>
-						<?php include("assets/img/analytics.svg"); ?>
-						<h4>アクセス分析</h4>
-						<p>Google Analyticsを利用したアクセス分析によって、集客・認知効果を可視化することができます！</p>
+						<!-- <?php include("assets/img/support.svg"); ?> -->
+						<span>🔧</span>
+						<h4>公開後のサポート</h4>
+						<p>公開後も気になることがあれば、お気軽にお問い合わせください！細かい要望もサポートします！</p>
 					</div>
 				</div>
 			</section>
@@ -134,12 +140,12 @@
 						endif;
 						wp_reset_postdata();
 					?>
-					<div class="more_button work_more" id="service_more">
-						<a href="<?php echo home_url('/work_cat/hp'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
+				</div>
+				<div class="more_button work_more" id="service_more">
+					<a href="<?php echo home_url('/work_cat/hp'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 			</section>
 

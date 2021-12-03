@@ -42,20 +42,25 @@
 						</div>
 						<div class="media_point">
 							<div>
-								<?php include("assets/img/pv.svg"); ?>
+								<!-- <?php include("assets/img/pv.svg"); ?> -->
+								<span>👀</span>
 								<p>月間<span>100</span>万PV</p>
 							</div>
 							<div>
-								<?php include("assets/img/shop.svg"); ?>
+								<!-- <?php include("assets/img/shop.svg"); ?> -->
+								<span>🏘</span>
 								<p>掲載店舗<span>200</span>件以上</p>
 							</div>
 							<div>
-								<?php include("assets/img/map.svg"); ?>
+								<!-- <?php include("assets/img/map.svg"); ?> -->
+								<span>📍</span>
 								<p>全道エリア対応</p>
 							</div>
 							<div>
-								<?php include("assets/img/language.svg"); ?>
+								<!-- <?php include("assets/img/language.svg"); ?> -->
+								<span>🌏</span>
 								<p>他言語対応可能</p>
+								
 							</div>
 						</div>
 					</div>
@@ -128,13 +133,12 @@
 						endif;
 						wp_reset_postdata();
 					?>
-					<div class="more_button" id="service_more">
-						<a href="<?php echo home_url('/work_cat/media'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
-				
+				</div>
+				<div class="more_button" id="service_more">
+					<a href="<?php echo home_url('/work_cat/media'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 
 			</section class="section">

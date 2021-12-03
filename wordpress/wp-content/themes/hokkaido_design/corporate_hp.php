@@ -57,32 +57,38 @@
 
 				<div class="service_point service_point_hp">
 					<div>
-						<?php include("assets/img/responsive.svg"); ?>
+						<!-- <?php include("assets/img/responsive.svg"); ?> -->
+						<span>📱</span>
 						<h4>レスポンシブ対応</h4>
 						<p>もちろんスマホ、タブレットからでも閲覧できるようにレスポンシブ対応いたします！</p>
 					</div>
 					<div>
-						<?php include("assets/img/design.svg"); ?>
+						<!-- <?php include("assets/img/design.svg"); ?> -->
+						<span>🎨</span>
 						<h4>オリジナルデザイン</h4>
 						<p>お客様のご希望に寄り添って、オリジナルデザインで提案させていただきます！</p>
 					</div>
 					<div>
-						<?php include("assets/img/update.svg"); ?>
+						<!-- <?php include("assets/img/update.svg"); ?> -->
+						<span>🚀</span>
 						<h4>自社更新可能</h4>
 						<p>いつでも好きなタイミングでHPを更新いただくことも可能です。</p>
 					</div>
 					<div>
-						<?php include("assets/img/support.svg"); ?>
+						<!-- <?php include("assets/img/support.svg"); ?> -->
+						<span>🔧</span>
 						<h4>公開後のサポート</h4>
 						<p>公開後も気になることがあれば、お気軽にお問い合わせください！細かい要望もサポートします！</p>
 					</div>
 					<div>
-						<?php include("assets/img/seo.svg"); ?>
+						<!-- <?php include("assets/img/seo.svg"); ?> -->
+						<span>👩‍💻</span>
 						<h4>SEO対策</h4>
 						<p>より多くの方に認知いただけるよう、SEO対策もしっかりサポートします！</p>
 					</div>
 					<div>
-						<?php include("assets/img/analytics.svg"); ?>
+						<!-- <?php include("assets/img/analytics.svg"); ?> -->
+						<span>📊</span>
 						<h4>アクセス分析</h4>
 						<p>Google Analyticsを利用したアクセス分析によって、集客・認知効果を可視化することができます！</p>
 					</div>
@@ -136,12 +142,12 @@
 						endif;
 						wp_reset_postdata();
 					?>
-					<div class="more_button work_more" id="service_more">
-						<a href="<?php echo home_url('/work_cat/hp'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
+				</div>
+				<div class="more_button work_more" id="service_more">
+					<a href="<?php echo home_url('/work_cat/hp'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 			</section>
 
@@ -208,7 +214,7 @@
 
 
 
-			<section class="section fadeUpTrigger">
+			<section class="section">
 				<div class="section_title">
 					<h3 class="section_title_en">REVIEWS</h3>
 					<h3 class="section_title_jp">お客様の声</h3>

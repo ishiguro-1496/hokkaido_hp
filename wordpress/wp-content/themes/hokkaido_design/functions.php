@@ -19,6 +19,7 @@
 
 	/*==== js設定 ====*/
 
+	/*==== jquery ====*/
 
 	if ( ! is_admin() ) {
 		function wpqw_register_script() {
@@ -33,11 +34,7 @@
 		add_action( 'wp_print_scripts', 'wpqw_add_script' );
 	}
 
-
-
-
-
-
+	/*==== GSAP ====*/
 
 	function gsap_add_scripts() {
 		wp_enqueue_script('gsap', '//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js' , '' , '' , true );
@@ -166,7 +163,7 @@
 	
 	function insert_work_fields() {
 		global $post;
-		echo '外部URL： <input class="function-work-name" type="text" name="work_link" value="'.get_post_meta($post->ID, 'work_link', true).'" size="50"  /><br>';
+		echo '外部URL： <input class="function-work-name" type="text" name="work_link" value="'.get_post_meta($post->ID, 'work_link', true).'" size="50" /><br>';
 
 		echo 'snsアカウント名： <input class="function-work-name" type="text" name="sns_account" value="'.get_post_meta($post->ID, 'sns_account', true).'" size="50" /><br>';
 
@@ -234,7 +231,7 @@
     	}
 
 
-		echo '利用者名： <input class="function-voice-name" type="text" name="customer_name" value="'.get_post_meta($post->ID, 'customer_name', true).'" size="50"  /><br>';
+		echo '利用者名： <input class="function-voice-name" type="text" name="customer_name" value="'.get_post_meta($post->ID, 'customer_name', true).'" size="50" /><br>';
 
 		echo '利用者URL： <input class="function-voice-name" type="text" name="customer_url" value="'.get_post_meta($post->ID, 'customer_url', true).'" size="50"  /><br>';
 

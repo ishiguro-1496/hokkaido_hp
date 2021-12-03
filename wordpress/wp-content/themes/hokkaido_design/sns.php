@@ -32,27 +32,32 @@
 
 				<div class="service_point service_point_sns">
 					<div>
-						<?php include("assets/img/responsive.svg"); ?>
+						<!-- <?php include("assets/img/responsive.svg"); ?> -->
+						<span>📱</span>
 						<h4>insta電子パンフレット</h4>
 						<p>instagramをお店の魅力を発信する電子パンフレットにします！イメージは制作実績をご覧ください</p>
 					</div>
 					<div>
-						<?php include("assets/img/followers.svg"); ?>
+						<!-- <?php include("assets/img/followers.svg"); ?> -->
+						<span>👥</span>
 						<h4>フォロワー数増加</h4>
 						<p>弊社が提携しているインフルエンサー等を活用して、フォロワーを継続的に増加させます</p>
 					</div>
 					<div>
-						<?php include("assets/img/check.svg"); ?>
+						<!-- <?php include("assets/img/check.svg"); ?> -->
+						<span>📣</span>
 						<h4>更新・発信内容管理</h4>
 						<p>定期的な更新や、投稿タイミング、投稿内容のチェックを行います。</p>
 					</div>
 					<div>
-						<?php include("assets/img/trend.svg"); ?>
+						<!-- <?php include("assets/img/trend.svg"); ?> -->
+						<span>📈</span>
 						<h4>トレンド入り</h4>
 						<p>弊社が提携しているインフルエンサーやそのフォロワーたちの投稿・閲覧によって、貴社の発信をトレンド入りさせることができます</p>
 					</div>
 					<div>
-						<?php include("assets/img/report.svg"); ?>
+						<!-- <?php include("assets/img/report.svg"); ?> -->
+						<span>📑</span>
 						<h4>実績定期報告</h4>
 						<p>一定期間経過後にどれだけ効果があったか定期的に報告いたします。また、その結果をもとに次の施策をご提案いたします。</p>
 					</div>
@@ -129,12 +134,12 @@
 					endif;
 					wp_reset_postdata();
 					?>
-					<div class="more_button" id="service_more">
-						<a href="<?php echo home_url('/work_cat/sns'); ?>">
-							<p>もっと見る</p>
-							<?php include("assets/img/chevron_right.svg"); ?>
-						</a>
-					</div>
+				</div>
+				<div class="more_button" id="service_more">
+					<a href="<?php echo home_url('/work_cat/sns'); ?>">
+						<p>もっと見る</p>
+						<?php include("assets/img/chevron_right.svg"); ?>
+					</a>
 				</div>
 
 			</section class="section">
@@ -188,7 +193,7 @@
 				</div>
 			</section>
 
-						<section class="section">
+			<section class="section">
 				<div class="section_title">
 					<h3 class="section_title_en">REVIEWS</h3>
 					<h3 class="section_title_jp">お客様の声</h3>

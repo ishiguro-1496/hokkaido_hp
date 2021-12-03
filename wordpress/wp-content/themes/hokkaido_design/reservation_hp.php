@@ -65,22 +65,26 @@
 
 				<div class="service_point service_point_hp">
 					<div>
-						<?php include("assets/img/bolt.svg"); ?>
+						<!-- <?php include("assets/img/bolt.svg"); ?> -->
+						<span>⚡</span>
 						<h4>即開設可能</h4>
 						<p>今すぐ使いたいのに申し込んでから時間がかかる…ということは有りません！必要情報を入力するだけですぐ利用することが可能です。</p>
 					</div>
 					<div>
-						<?php include("assets/img/web.svg"); ?>
+						<!-- <?php include("assets/img/web.svg"); ?> -->
+						<span>🗂</span>
 						<h4>スケジュール管理</h4>
 						<p>管理画面から、事前に予約可能日時・件数を簡単に登録することができ、予約状況と空き状況も確認できます。</p>
 					</div>
 					<div>
-						<?php include("assets/img/responsive.svg"); ?>
+						<!-- <?php include("assets/img/responsive.svg"); ?> -->
+						<span>📱</span>
 						<h4>スマホからも予約OK</h4>
 						<p>パソコンだけでなく、タブレット、スマートフォンからも予約が可能です。お出かけ先での予約も受けられるので、予約が取りやすくなります。</p>
 					</div>
 					<div>
-						<?php include("assets/img/calendar.svg"); ?>
+						<!-- <?php include("assets/img/calendar.svg"); ?> -->
+						<span>🗓️</span>
 						<h4>わかりやすい簡単予約</h4>
 						<p>予約画面は現在の空き状況がカレンダー表示で確認することができ、必要情報を入力するだけで患者様が簡単に予約ができます。</p>
 					</div>
