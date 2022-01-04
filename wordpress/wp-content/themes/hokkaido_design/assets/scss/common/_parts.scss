@@ -1,46 +1,32 @@
-.top_bg{
-	position:relative;
-	img{
-		width: 100%;
-		height: 80vh;
-		object-fit:cover;
-		@include mq(sp) {
-			height: 64vh;
-		}
-	}
-	.top_message{	
-		position:absolute;
-		bottom:20%;
-		left: 4%;
-		background-color:rgba($white,0.5);
-		@include r_16;
-		padding: 16px 4%;
-  		backdrop-filter: blur(4px);
-		@include mq(sp) {
-			left: 8%;
-		}
-		// div{
-		// 	width: 100px;
-		// 	height: 100px;
-		// 	z-index: 1000;
-		// 	background-image: url("../img/hokkaido.png");
-		// 	background-repeat: no-repeat;
-		// 	background-color:rgba($white,0.5);
-		// 	backdrop-filter: blur(4px);
-		// }
-		h1{
-			line-height: 1.6em;
-			font-size: 2.8vw;
-			// opacity: 1;
-			// text-shadow: 0px 4px 8px $white; 
-			@include mq(sp) {
-				font-size: 5.6vw;
-			}
-		}
-	}
+.top_fv{
+	position: fixed;
+    z-index:-1;
+    top: 0;
+    right:0;
+	left: 0;
+	bottom: 0;
+    overflow: hidden;
 }
 
-
+video{
+	width: 100%;
+	height: auto;
+	position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 177.77777778vh;
+    height: 56.25vw;
+    min-height: 100%;
+    min-width: 100%;
+	object-fit: scale-down;
+	@include mq(sp) {
+		width: 100%;
+    	height: auto;
+		top: 16%;
+  	}	
+}
 
 .page_title_en{
 	@include font-size(32);
@@ -222,9 +208,9 @@
 	margin: 0px auto 120px auto ;
 }
 
-.service_more{
+// .service_more{
 	
-}
+// }
 
 .about_more{
 	margin: 0px 0px 0px auto ;

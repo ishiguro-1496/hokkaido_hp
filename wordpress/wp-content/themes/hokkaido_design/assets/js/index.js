@@ -28,3 +28,13 @@ jQuery(document).ready(function($){
   });
   
 });
+
+$(function() {
+  var height=$(".top_fv").height();
+  $("body").css("margin-top", height);
+});
+
+// $(function() {
+//   var header_height=$("header").height();
+//   $("body").css("margin-top", header_height);
+// });

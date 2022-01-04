@@ -66,6 +66,7 @@ html.is-fixed body {
 
 body{
    line-height: 1.6em;
+   z-index: 2;
 }
 
 a{
@@ -139,7 +140,28 @@ a{
   box-shadow: 4px 8px 20px 0px rgb(143,148,157);
 }
 
-
+@mixin dashed_box{
+  background-image :
+  linear-gradient(to right, $black, $black 16px, transparent 16px, transparent 16px),  /* 上の線 */
+  linear-gradient(to bottom, $black, $black 16px, transparent 16px, transparent 8px), /* 右の線 */
+  linear-gradient(to left, $black, $black 16px, transparent 16px, transparent 16px),  /* 下の線 */
+  linear-gradient(to top, $black, $black 16px, transparent 16px, transparent 16px);   /* 左の線 */
+  background-size:
+    32px 1px,  /* 上の線 */
+    1px 32px, /* 右の線 */
+    32px 1px,  /* 下の線 */
+    1px 32px;   /* 左の線 */
+  background-position:
+    left top,  /* 上の線 */
+    right top, /* 右の線 */
+    right bottom,  /* 下の線 */
+    left bottom;   /* 左の線 */
+  background-repeat:
+    repeat-x,  /* 上の線 */
+    repeat-y, /* 右の線 */
+    repeat-x,  /* 下の線 */
+    repeat-y;   /* 左の線 */
+}
 
 // animation
 

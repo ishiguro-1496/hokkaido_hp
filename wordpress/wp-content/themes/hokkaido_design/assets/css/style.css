@@ -165,6 +165,7 @@ html {
 
 body {
   line-height: 1.6em;
+  z-index: 2;
 }
 
 a {
@@ -516,43 +517,35 @@ header {
   padding-bottom: 64px;
 }
 
-.top_bg {
-  position: relative;
+.top_fv {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
 }
-.top_bg img {
+
+video {
   width: 100%;
-  height: 80vh;
-  object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  .top_bg img {
-    height: 64vh;
-  }
-}
-.top_bg .top_message {
+  height: auto;
   position: absolute;
-  bottom: 20%;
-  left: 4%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  padding: 16px 4%;
-  backdrop-filter: blur(4px);
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 177.77777778vh;
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: scale-down;
 }
 @media screen and (max-width: 768px) {
-  .top_bg .top_message {
-    left: 8%;
-  }
-}
-.top_bg .top_message h1 {
-  line-height: 1.6em;
-  font-size: 2.8vw;
-}
-@media screen and (max-width: 768px) {
-  .top_bg .top_message h1 {
-    font-size: 5.6vw;
+  video {
+    width: 100%;
+    height: auto;
+    top: 16%;
   }
 }
 
@@ -1022,11 +1015,166 @@ iframe {
   border-bottom-left-radius: 16px;
 }
 
+/*==== indexページサービス ====*/
+.service_concept {
+  margin: 16px auto 32px auto;
+  background: #FFFFFF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-image: linear-gradient(to right, #333333, #333333 16px, transparent 16px, transparent 16px), linear-gradient(to bottom, #333333, #333333 16px, transparent 16px, transparent 8px), linear-gradient(to left, #333333, #333333 16px, transparent 16px, transparent 16px), linear-gradient(to top, #333333, #333333 16px, transparent 16px, transparent 16px);
+  /* 左の線 */
+  background-size: 32px 1px, 1px 32px, 32px 1px, 1px 32px;
+  /* 左の線 */
+  background-position: left top, right top, right bottom, left bottom;
+  /* 左の線 */
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  /* 左の線 */
+  position: relative;
+}
+.service_concept div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 32px 0px;
+}
+@media screen and (max-width: 768px) {
+  .service_concept div {
+    flex-direction: column;
+  }
+}
+.service_concept div p {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 768px) {
+  .service_concept div p {
+    flex-direction: column;
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+}
+.service_concept div p strong {
+  color: #11A598;
+}
+@media screen and (max-width: 768px) {
+  .service_concept div svg {
+    padding-bottom: 16px;
+  }
+}
+.service_concept span {
+  width: 1px;
+  height: 80px;
+  background: #333333;
+  position: absolute;
+  bottom: -56px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.service_contents {
+  background: #FFFFFF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-image: linear-gradient(to right, #333333, #333333 16px, transparent 16px, transparent 16px), linear-gradient(to bottom, #333333, #333333 16px, transparent 16px, transparent 8px), linear-gradient(to left, #333333, #333333 16px, transparent 16px, transparent 16px), linear-gradient(to top, #333333, #333333 16px, transparent 16px, transparent 16px);
+  /* 左の線 */
+  background-size: 32px 1px, 1px 32px, 32px 1px, 1px 32px;
+  /* 左の線 */
+  background-position: left top, right top, right bottom, left bottom;
+  /* 左の線 */
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  /* 左の線 */
+  padding: 56px 0px 16px 0px;
+}
+@media screen and (max-width: 768px) {
+  .service_contents {
+    padding: 32px 4% 16px 4%;
+  }
+}
+
+.service_partner {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service_partner svg {
+  margin: 24px auto;
+}
+.service_partner p {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #11A598;
+  text-align: center;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 768px) {
+  .service_partner p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+.partner_point {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .partner_point {
+    flex-direction: column;
+  }
+}
+.partner_point div {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+@media screen and (max-width: 768px) {
+  .partner_point div {
+    width: 80%;
+    margin: 16px auto;
+  }
+}
+.partner_point div svg {
+  fill: none;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+.partner_point div span {
+  font-size: 56px;
+  display: inline-block;
+  height: 40px;
+  padding: 24px 0;
+}
+.partner_point div h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+.partner_point div ul li {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding-bottom: 16px;
+}
+
 /*==== サービス一覧 ====*/
 .services {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   .services {
@@ -1311,7 +1459,7 @@ iframe {
   border-bottom: 1px solid #11A598;
 }
 
-/*==== 特長 ====*/
+/*==== 特徴 ====*/
 .service_point {
   display: flex;
   align-items: flex-start;

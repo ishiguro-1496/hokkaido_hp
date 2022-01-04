@@ -1,9 +1,138 @@
+/*==== indexページサービス ====*/
+
+.service_concept{
+	margin: 16px auto 32px auto;
+	background:$white;
+	@include r_8;
+	@include dashed_box;
+	position: relative;
+	div{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 32px 0px;
+		@include mq(sp) {
+			flex-direction: column;
+		}
+		p{
+			@include font-size(32);
+			@include mq(sp) {
+				flex-direction: column;
+				@include font-size(24);
+			}
+			line-height: 1.6em;
+			strong{
+				color:$main_color;
+			}
+		}
+		svg{
+			@include mq(sp) {
+				padding-bottom: 16px;
+			}
+		}
+	}
+	span{
+		width: 1px;
+		height: 80px;
+		background:$black;
+		position:absolute;
+		bottom: -56px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		
+	}
+}
+
+
+.service_contents{
+	background:$white;
+	@include r_8;
+	@include dashed_box;
+	padding:56px 0px 16px 0px;
+	@include mq(sp) {
+		padding: 32px 4% 16px 4%;
+	}
+}
+
+.service_partner{
+	margin: 24px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	svg{
+		margin: 24px auto;
+	}
+	p{
+		@include font-size(24);
+		font-weight: bold;
+		padding-bottom: 16px;
+		border-bottom: 3px solid $main_color;
+		text-align: center;
+		line-height: 1.6em;
+		@include mq(sp) {
+			@include font-size(16);
+		}
+	}
+}
+
+.partner_point{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	@include mq(sp) {
+		flex-direction: column;
+	}
+	div{
+		width: 26%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 32px 0;
+		@include mq(sp) {
+			width: 80%;
+			margin: 16px auto;
+		}
+		svg{
+			fill: none;
+			width: 64px;
+			height: 64px;
+			margin-bottom: 16px;
+		}
+		span{
+			font-size: 56px;
+			display: inline-block;
+			height: 40px;
+			padding :24px 0;
+		}
+		h4{
+			@include font-size(16);
+			margin-bottom: 16px;
+		}
+		ul{
+			li{
+				@include font-size(14);
+				padding-bottom: 16px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
 /*==== サービス一覧 ====*/
 
 .services{
 	display: flex;
 	align-items:flex-start;
-	justify-content: space-between;
+	justify-content: space-around;
 	@include mq(sp) {
 		flex-direction: column;
 	}
@@ -280,7 +409,7 @@
 }
 
 
-/*==== 特長 ====*/
+/*==== 特徴 ====*/
 
 .service_point{
 	display: flex;
