@@ -2,14 +2,14 @@ jQuery(document).ready(function($){
 
   $(".openbtn1").click(function () {
     $(this).toggleClass('active');
-      $("#g-nav").toggleClass('panelactive');
-      $(".circle-bg").toggleClass('circleactive');
+    $("#g-nav").toggleClass('panelactive');
+    $(".circle-bg").toggleClass('circleactive');
       
-      if ($(this).hasClass("active")) {  
+    if ($(this).hasClass("active")) {  
       $("html").addClass("is-fixed");  
-      } else {                              
+    } else {                              
       $("html").removeClass("is-fixed");    
-      }
+    }
   });
 
   $(".openbtn1").click(function () {      

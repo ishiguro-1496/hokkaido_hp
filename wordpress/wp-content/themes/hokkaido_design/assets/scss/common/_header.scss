@@ -1,16 +1,15 @@
 header{
 	width: 100%;
-	background-color: $bg_color;
+	background-color: $white;
 	display: flex;
 	justify-content: space-between;
 	padding:24px 0;
 	align-items:center;
-	// position: -webkit-sticky;
-	// position: sticky;
-	// top: 0;
-	// left: 0;
-	// background:$bg_color;
-	// z-index: 10000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -1px;
+	left: 0;
+	z-index: 10000;
 }
 
 .header_logo{
@@ -64,7 +63,7 @@ header{
 #contact_btn{
 	background-color:$main_color;
 	@include r_8;
-	padding:8px 24px;
+	padding:12px 24px;
 	@include mq(sp) {
 		display: block;
 		padding:8px;
@@ -167,7 +166,7 @@ opacity: 1;
 		height: 100vh;
 		display: block;
 		ul{
-			opacity:1;
+			display: block;
 			li{
 				animation-name:gnaviAnime;
 				animation-duration:1s;
@@ -179,7 +178,7 @@ opacity: 1;
 	}
 
 	ul {
-	  	opacity: 0;
+	  	display:none;
 		position: fixed;
 		z-index: 10000;
 		top:40%;
@@ -231,7 +230,7 @@ opacity: 1;
     background: rgba($main_color, .96);
   	transform: scale(0);
   	right:-24px;
-    top:40px;
+    top:16px;
     transition: all .6s;
     &.circleactive{
     	transform: scale(50);

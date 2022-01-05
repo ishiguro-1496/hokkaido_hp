@@ -14,36 +14,36 @@ gsap.set(".section_title", {
 
 /*==== ホーム====*/
 
-gsap.set(".top_bg img", {
+
+gsap.set(".service_partner", {
   opacity:0,
-  scale:1.04,
   }); 
 
-gsap.to(".top_bg img", {
-  duration:0.8,
+gsap.to('.service_partner', {
   opacity:1,
-  scale:1,
+  scrollTrigger: {
+      trigger: '.service_partner',
+      start: 'top 80%'
+    }
 });
 
-gsap.set(".top_message h1", {
+gsap.set(".partner_point div", {
   opacity:0,
-  y: 16,
+  y: 40,
   }); 
 
-gsap.to(".top_message h1", {
-  duration:0.6,
-  opacity:1,
+gsap.to('.partner_point div', {
   y: 0,
-  });
-
-gsap.set(".top_message", {
-  opacity:0,
-  }); 
-
-gsap.to(".top_message", {
-  duration:0.4,
   opacity:1,
-  });
+  scrollTrigger: {
+     trigger: '.partner_point',
+     start: 'top 80%'
+   },
+   stagger: {
+     from: "start",
+     amount: 0.8,
+      }
+ });
 
 
 /*==== 会社概要====*/

@@ -13,6 +13,7 @@
 		padding: 32px 0px;
 		@include mq(sp) {
 			flex-direction: column;
+			padding: 32px 4%;
 		}
 		p{
 			@include font-size(32);
@@ -648,13 +649,6 @@
 		}
 	}
 
-}
-
-.br-sp {
-	display: none; 
-	@include mq(sp) {
-			display: block;
-	}
 }
 
 

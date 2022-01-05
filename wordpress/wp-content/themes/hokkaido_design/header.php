@@ -69,11 +69,11 @@
               <li><a href="<?php echo home_url('/about/'); ?>">About</a></li>  
               <li>
                 <a href="<?php echo home_url('/service/'); ?>">Service</a>
-    <!--               <div>
-                    <p><a href="#">HP制作</a></p>
-                    <p><a href="#">SNSコンサル</a></p>
-                    <p><a href="#">メディア掲載</a></p>
-                  </div>  -->
+                  <div>
+                    <p><a href="<?php echo home_url('/service/corporate/'); ?>">HP制作</a></p>
+                    <p><a href="<?php echo home_url('/service/sns/'); ?>">SNSコンサル</a></p>
+                    <p><a href="<?php echo home_url('/service/media/'); ?>">メディア掲載</a></p>
+                  </div> 
               </li>  
               <li><a href="<?php echo home_url('/work/'); ?>">Work</a></li>  
               <li><a href="<?php echo home_url('/blog/'); ?>">Blog</a></li>  

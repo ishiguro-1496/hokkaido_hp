@@ -5,7 +5,7 @@
 	<div id="wrapper">
 		<div class="top_fv">
 			<video autoplay muted>
-				<source src="<?php echo get_template_directory_uri()?>/assets/video/fv_2.mp4" type="video/mp4"/>
+				<source src="<?php echo get_template_directory_uri()?>/assets/video/fv_4.mp4" type="video/mp4"/>
 			</video>
 		</div>
 
@@ -45,7 +45,7 @@
 					<div>
 						<?php include("assets/img/concierge.svg"); ?>
 						<p>
-							<strong>専任コンシェルジュ</strong>が御社の<br><strong>IT・DX</strong>を全面<strong>サポート</strong>します
+							<strong>専任コンシェルジュ</strong>が御社の<br class="br-pc"><strong>IT・DX</strong>を全面<strong>サポート</strong>します
 						</p>
 					</div>
 					<span></span>
@@ -140,30 +140,20 @@
 							</ul>
 						</div>
 						<div>
-							<span>📦</span>
-							<h4>オフィス設備</h4>
+							<span>🎪</span>
+							<h4>イベントサポート</h4>
 							<ul>
-								<li>インテリア</li>
-								<li>事務機器</li>
-								<li>テナント紹介</li>
+								<li>ノベルティー制作</li>
+								<li>各種行事の企画・運営</li>
+								<li>会場手配</li>
 							</ul>
 						</div>
 						<div>
-							<span>🧑‍💻</span>
-							<h4>各種サイト設定代行</h4>
+							<span>💰</span>
+							<h4>財務・会計</h4>
 							<ul>
-								<li>旅行予約サイト</li>
-								<li>Googleマイビジネス</li>
-								<li>各種SNS</li>
-							</ul>
-						</div>
-						<div>
-							<span>🎥</span>
-							<h4>動画編集</h4>
-							<ul>
-								<li>商品PV</li>
-								<li>社員教育動画</li>
-								<li>企業紹介動画</li>
+								<li>会計ソフト導入支援</li>
+								<li>税理士・会計士紹介</li>
 							</ul>
 						</div>
 					</div>

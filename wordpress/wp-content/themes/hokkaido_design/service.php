@@ -7,9 +7,9 @@
 	<div id="wrapper">
 		<!-- main -->
 		<div id="main">
+			<h1 class="page_title_en">SERVICE</h1>
+			<h2 class="page_title_jp">サービス</h2>
 			<section class="section">
-				<h1 class="page_title_en">SERVICE</h1>
-				<h2 class="page_title_jp">サービス</h2>
 				<div class="services">
 					<div class="services_block services_hp_block">
 						<div class="services_icon services_icon_hp">
