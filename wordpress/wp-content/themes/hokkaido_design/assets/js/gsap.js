@@ -91,7 +91,7 @@ gsap.to('.services_block', {
   opacity:1,
   scrollTrigger: {
      trigger: '.services',
-     start: 'top 90%'
+     start: 'top 80%'
    },
    stagger: {
      from: "start",
