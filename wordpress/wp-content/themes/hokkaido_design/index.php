@@ -205,7 +205,7 @@
 						wp_reset_postdata();
 					?>
 					<div class="more_button work_more" id="service_more">
-						<a href="<?php echo home_url('/work/'); ?>">
+						<a href="<?php echo home_url('/work_cat/hp/'); ?>">
 							<p>もっと見る</p>
 							<?php include("assets/img/chevron_right.svg"); ?>
 						</a>

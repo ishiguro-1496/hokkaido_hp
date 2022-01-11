@@ -197,48 +197,48 @@ a {
 }
 @keyframes fluidrotate_2 {
   0%, 100% {
-    border-radius: 61% 37% 54% 46%/55% 48% 52% 45%;
-  }
-  14% {
     border-radius: 40% 58% 54% 46%/49% 60% 40% 51%;
   }
-  28% {
-    border-radius: 54% 46% 40% 62%/49% 70% 30% 51%;
-  }
-  42% {
-    border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
-  }
-  56% {
-    border-radius: 61% 39% 67% 33%/68% 50% 50% 30%;
-  }
-  70% {
+  14% {
     border-radius: 50% 50% 34% 66%/56% 66% 32% 44%;
   }
-  84% {
+  28% {
+    border-radius: 61% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  42% {
     border-radius: 46% 54% 50% 50%/35% 61% 35% 65%;
+  }
+  56% {
+    border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
+  }
+  70% {
+    border-radius: 54% 46% 40% 62%/49% 70% 30% 51%;
+  }
+  84% {
+    border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
   }
 }
 @keyframes fluidrotate_3 {
   0%, 100% {
-    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    border-radius: 46% 54% 50% 50%/35% 61% 35% 65%;
   }
   14% {
-    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
   }
   28% {
-    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    border-radius: 61% 39% 55% 42%/61% 38% 62% 39%;
   }
   42% {
-    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    border-radius: 40% 58% 54% 46%/49% 60% 40% 51%;
   }
   56% {
-    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    border-radius: 50% 50% 34% 66%/56% 66% 32% 44%;
   }
   70% {
-    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    border-radius: 61% 37% 54% 46%/55% 48% 52% 45%;
   }
   84% {
-    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    border-radius: 54% 46% 40% 62%/49% 70% 30% 51%;
   }
 }
 .fadeUp {
@@ -1237,17 +1237,17 @@ iframe {
 
 .services_icon_hp {
   background: #66B8CF;
-  animation: fluidrotate 30s ease 0s infinite;
+  animation: fluidrotate 20s ease 0s infinite;
 }
 
 .services_icon_sns {
   background: #7274DB;
-  animation: fluidrotate_2 30s ease 0s infinite;
+  animation: fluidrotate_2 20s ease 0s infinite;
 }
 
 .services_icon_media {
   background: #FF5A5F;
-  animation: fluidrotate_3 30s ease 0s infinite;
+  animation: fluidrotate_3 20s ease 0s infinite;
 }
 
 .services_text div {
@@ -1343,12 +1343,12 @@ iframe {
 
 .fluid_hp {
   background: #66B8CF;
-  animation: fluidrotate 30s ease 0s infinite;
+  animation: fluidrotate 20s ease 0s infinite;
 }
 
 .fluid_sns {
   background: #7274DB;
-  animation: fluidrotate_2 30s ease 0s infinite;
+  animation: fluidrotate_2 20s ease 0s infinite;
 }
 .fluid_sns svg {
   width: 224px;
@@ -1362,7 +1362,7 @@ iframe {
 
 .fluid_media {
   background: #FF5A5F;
-  animation: fluidrotate_3 30s ease 0s infinite;
+  animation: fluidrotate_3 20s ease 0s infinite;
 }
 
 .service_name {

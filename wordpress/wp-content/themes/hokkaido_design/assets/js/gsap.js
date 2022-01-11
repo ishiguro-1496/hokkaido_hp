@@ -59,7 +59,7 @@ gsap.to(".mission_title div", {
   duration:0.8,
   scrollTrigger: {
     trigger: '.mission_title',
-    start: 'top 90%'
+    start: 'top 80%'
   },
 });
 
@@ -74,7 +74,7 @@ gsap.to(".mission_title div h1", {
   duration:0.8,
   scrollTrigger: {
     trigger: '.mission_title',
-    start: 'top 90%'
+    start: 'top 80%'
   },
 });
   
