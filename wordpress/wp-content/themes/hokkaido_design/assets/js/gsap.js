@@ -2,6 +2,38 @@
 
 /*==== 共通====*/
 
+
+gsap.set(".page_title_en", {
+  opacity:0,
+  y:-16,
+}); 
+
+gsap.to('.page_title_en', {
+  opacity:1,
+  y:0,
+  duration:0.4,
+  scrollTrigger: {
+      trigger: '.page_title_en',
+      start: 'top 80%'
+    }
+});
+
+gsap.set(".page_title_jp", {
+  opacity:0,
+  y:-16,
+}); 
+
+gsap.to('.page_title_jp', {
+  opacity:1,
+  y:0,
+  duration:0.4,
+  scrollTrigger: {
+      trigger: '.page_title_jp',
+      start: 'top 80%'
+    }
+});
+
+
 gsap.set(".section_title", {
   opacity:0,
 }); 

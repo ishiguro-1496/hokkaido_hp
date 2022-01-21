@@ -10,6 +10,9 @@ header{
 	top: -1px;
 	left: 0;
 	z-index: 10000;
+	@include mq(sp) {
+		padding:16px 0;
+  	}	
 }
 
 .header_logo{
@@ -65,7 +68,7 @@ header{
 	@include r_8;
 	padding:12px 24px;
 	@include mq(sp) {
-		display: block;
+		display: none;
 		padding:8px;
   	}	
 	a{
