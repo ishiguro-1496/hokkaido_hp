@@ -200,6 +200,9 @@ video{
 .more_button{
 	@include more_button;
 	width:160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .work_more{
@@ -249,6 +252,11 @@ video{
 			fill:$sub_color_3;
 		}
 	}
+}
+
+.thanks_more{
+	margin-top: 32px;
+	align-items: center;
 }
 
 
