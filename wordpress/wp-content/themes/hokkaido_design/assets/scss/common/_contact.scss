@@ -16,7 +16,7 @@
     form{
     	width: 64%;
     	@include mq(sp) {
-    		width: 88%;
+    		width: 100%;
   		}
     	margin: auto;
     	max-width: 560px;
@@ -73,6 +73,10 @@
 .submit_block{
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	input{
+		padding:16px 0%;
+	}
 }
 
 .checkbox_block{
@@ -87,11 +91,17 @@
 	background-color:$main_color;
 	color:$white;
 	margin: auto;
+	font-weight: bold;
+	@include font-size(14);
+	@include mq(sp){
+		width: 100% !important;
+	}
 }
 
 .privacy_policy{
 	text-align: center;
 	@include font-size(14);
+	line-height: 1.6em;
 	a{
 		color:$main_color;
 	}
@@ -125,4 +135,27 @@
 .wpcf7-list-item-label{
 	white-space: nowrap;
 	color:$black !important;
+}
+
+
+.wpcf7-not-valid-tip{
+	color:$sub_color_3 !important;
+	padding-top:8px;
+	@include font-size(14);
+}
+
+
+.wpcf7-response-output{
+	border-color: $sub_color_3 !important;
+	background-color:#FCEDEC;
+	padding:16px 8px !important;
+	@include r_8;
+}
+
+div.wpcf7 .ajax-loader {
+	display: none !important;
+}
+
+.wpcf7-mail-sent-ok {
+	display:none !important;
 }

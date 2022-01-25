@@ -29,6 +29,9 @@ jQuery(document).ready(function($){
   
 });
 
+var loader = document.getElementsByClassName("ajax-loader");
+loader.remove();
+
 $(function() {
   var height=$(".top_fv").height();
   $("body").css("margin-top", height);
