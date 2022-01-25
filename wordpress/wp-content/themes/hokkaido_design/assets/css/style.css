@@ -2726,7 +2726,8 @@ div.wpcf7 .ajax-loader {
 }
 
 .wpcf7-mail-sent-ok {
-  display: none !important;
+  background-color: #EDF7ED !important;
+  border-color: #11A598 !important;
 }
 
 .contact_complete {
