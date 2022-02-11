@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/* common */
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
 @import "http://fonts.googleapis.com/earlyaccess/notosansjp.css";
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -535,6 +527,15 @@ header {
   left: 0;
   bottom: 0;
   overflow: hidden;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 686px;
+}
+@media screen and (max-width: 768px) {
+  .top_fv {
+    height: 221px;
+    overflow: hidden;
+  }
 }
 
 video {
@@ -553,7 +554,6 @@ video {
   video {
     width: 100%;
     height: auto;
-    top: 16%;
   }
 }
 

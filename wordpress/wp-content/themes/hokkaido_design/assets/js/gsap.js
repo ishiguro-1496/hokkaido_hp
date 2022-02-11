@@ -136,11 +136,6 @@ gsap.set(".service_point div", {
   y: 40,
   }); 
 
-ScrollTrigger.batch(".service_point div", {
-  onEnter: batch => gsap.to(batch, {duration:0.4, opacity: 1, y: 0,}),
-  start: "top 90%",
-  once: true 
-});
 
 gsap.to('.service_point div', {
   y: 0,

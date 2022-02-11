@@ -5,7 +5,7 @@
 	<div id="wrapper">
 		<div class="top_fv">
 			<video autoplay muted>
-				<source src="<?php echo get_template_directory_uri()?>/assets/video/fv_4.mp4" type="video/mp4"/>
+				<source src="<?php echo get_template_directory_uri()?>/assets/video/fv.mp4" type="video/mp4"/>
 			</video>
 		</div>
 
