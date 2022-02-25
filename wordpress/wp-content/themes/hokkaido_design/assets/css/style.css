@@ -1146,7 +1146,7 @@ iframe {
 }
 @media screen and (max-width: 768px) {
   .service_contents {
-    padding: 32px 4% 16px 4%;
+    padding: 32px 6% 16px 6%;
   }
 }
 
@@ -1221,6 +1221,12 @@ iframe {
   font-size: 14px;
   font-size: 1.4rem;
   padding-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .partner_point div ul li {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
 }
 
 /*==== サービス一覧 ====*/

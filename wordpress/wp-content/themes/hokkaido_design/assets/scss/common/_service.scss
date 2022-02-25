@@ -52,7 +52,7 @@
 	@include dashed_box;
 	padding:56px 0px 16px 0px;
 	@include mq(sp) {
-		padding: 32px 4% 16px 4%;
+		padding: 32px 6% 16px 6%;
 	}
 }
 
@@ -116,6 +116,9 @@
 			li{
 				@include font-size(14);
 				padding-bottom: 16px;
+				@include mq(sp) {
+					@include font-size(16);
+				}
 			}
 		}
 	}

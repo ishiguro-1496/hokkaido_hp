@@ -4,8 +4,9 @@
 	<!-- wrapper -->
 	<div id="wrapper">
 		<div class="top_fv">
-			<video autoplay muted>
+			<video autoplay muted playsinline webkit-playsinline>
 				<source src="<?php echo get_template_directory_uri()?>/assets/video/fv.mp4" type="video/mp4"/>
+				<!-- <source src="https://youtu.be/W3SirZ1LHK8" type="video/mp4"/> -->
 			</video>
 		</div>
 
@@ -29,7 +30,7 @@
 					<p>「アイディアはあるけど実現できない」、「オンライン集客に困っている」、「業務のデジタル化をしたいけど何から始めれば良いかわからない」そんな北海道の起業家たちを様々な手段で支援いたします。&#129309;</p>
 				</div>
 				<div class="more_button about_more">
-					<a href="<?php echo home_url('/about/'); ?>">
+					<a href="<?php echo home_url('/about'); ?>">
 						<p>詳しく見る</p>
 						<?php include("assets/img/chevron_right.svg"); ?>
 					</a>
@@ -245,7 +246,7 @@
 					<?php endwhile; endif; ?>
 				</div>
 				<div class="more_button work_more" id="service_more">
-					<a href="<?php echo home_url('/blog/'); ?>">
+					<a href="<?php echo home_url('/blog'); ?>">
 						<p>もっと見る</p>
 						<?php include("assets/img/chevron_right.svg"); ?>
 					</a>
